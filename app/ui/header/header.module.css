@@ -1,0 +1,29 @@
+.header div {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--elements-color);
+}
+
+.title {
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: none;
+  border: none;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  color: inherit;
+
+  & svg {
+    width: 16px;
+    height: 16px;
+  }
+}
