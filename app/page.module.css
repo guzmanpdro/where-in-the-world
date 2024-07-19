@@ -1,0 +1,12 @@
+.countryList {
+  padding: 0 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  list-style-type: none;
+
+  & .listItem {
+    background-color: var(--elements-color);
+    border-radius: 4px;
+  }
+}
