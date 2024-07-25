@@ -11,7 +11,7 @@ import { convertToLowerCase } from "./lib/utils"
 export default function Home() {
   const [countries, setCountries] = useState(initialContries)
 
-  const handlerSearch = (formData) => {
+  const handlerSearch = (formData: FormData) => {
     const query = formData.get("query")
     convertToLowerCase(query)
     const countryFound = initialContries.filter((element) => convertToLowerCase(element.name).includes(query))
