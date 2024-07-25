@@ -1,4 +1,4 @@
-import SearchIcon from "../icon"
+import SearchIcon from "../icons"
 import styles from "./actionsBar.module.css"
 
 export default function ActionsBar() {
