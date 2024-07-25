@@ -1,7 +1,7 @@
 import SearchIcon from "../icons"
 import styles from "./actionsBar.module.css"
 
-export default function ActionsBar({ handlerSubmit }) {
+export default function ActionsBar({ handlerSubmit }: any) {
   return (
     <section className={styles.actionsBar}>
       <form action={handlerSubmit} autoComplete="off">
