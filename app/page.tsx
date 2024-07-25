@@ -1,18 +1,31 @@
+"use client"
+
+import { useState } from "react";
 import Container from "./ui/container";
 import CountryCard from "./ui/country-card/countryCard";
 import styles from "./page.module.css";
-import { countries as initialCountries } from "./lib/data.json"
 import ActionsBar from "./ui/actions-bar/actionsBar";
+import initialContries from "./lib/data.json";
+import { convertToLowerCase } from "./lib/utils"
 
 export default function Home() {
+  const [countries, setCountries] = useState(initialContries)
+
+  const handlerSearch = (formData) => {
+    const query = formData.get("query")
+    convertToLowerCase(query)
+    const countryFound = initialContries.filter((element) => convertToLowerCase(element.name).includes(query))
+    setCountries(countryFound)
+  }
+
   return (
     <Container>
-      <ActionsBar />
+      <ActionsBar handlerSubmit={handlerSearch} />
       <main className={styles.main}>
         {
           <ul className={styles.countryList}>
             {
-              initialCountries.slice(0, 10).map((country) => {
+              countries.slice(0, 10).map((country) => {
                 const {
                   alpha3Code,
                   capital,

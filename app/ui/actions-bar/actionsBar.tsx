@@ -1,13 +1,14 @@
 import SearchIcon from "../icons"
 import styles from "./actionsBar.module.css"
 
-export default function ActionsBar() {
+export default function ActionsBar({ handlerSubmit }) {
   return (
     <section className={styles.actionsBar}>
-      <form>
+      <form action={handlerSubmit} autoComplete="off">
         <label className={styles.labelSeach}>
           <input
             className={styles.inputSearch}
+            name="query"
             type="search"
             placeholder="Search for a country..." 
           />
