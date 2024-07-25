@@ -1,0 +1,27 @@
+.actionsBar {
+  margin-top: 24px;
+}
+
+.labelSeach {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  & .inputSearch {
+    width: 100%;
+    padding: 16px 16px 16px 80px;
+    background-color: var(--elements-color);
+    color: var(--text-color);
+    border: none;
+    border-radius: 4px;
+    outline: none;
+  }
+
+  & .searchIcon {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    padding-left: 32px;
+  }
+}
+
