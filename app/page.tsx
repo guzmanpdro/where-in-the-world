@@ -2,11 +2,13 @@ import Container from "./ui/container";
 import CountryCard from "./ui/country-card/countryCard";
 import styles from "./page.module.css";
 import { countries as initialCountries } from "./lib/data.json"
+import ActionsBar from "./ui/actions-bar/actionsBar";
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <Container>
+    <Container>
+      <ActionsBar />
+      <main className={styles.main}>
         {
           <ul className={styles.countryList}>
             {
@@ -35,7 +37,7 @@ export default function Home() {
             }
           </ul>
         }
-      </Container>
-    </main>
+      </main>
+    </Container>
   );
 }
