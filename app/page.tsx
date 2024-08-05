@@ -17,9 +17,16 @@ export default function Home() {
     setCountries(countryFound)
   }
 
+  const handleChange = (event: any) => {
+    const region = event.target.value
+    console.log(region)
+    const filteredCountries = initialContries.filter((country) => country.region === region)
+    setCountries(filteredCountries)
+  }
+
   return (
     <Container>
-      <ActionsBar handlerSubmit={handlerSearch} />
+      <ActionsBar handlerSubmit={handlerSearch} handleChange={(e: any) => handleChange(e)} />
       <main className={styles.main}>
         {
           <ul className={styles.countryList}>
