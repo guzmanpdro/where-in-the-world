@@ -1,5 +1,55 @@
 .actionsBar {
   margin-top: 24px;
+
+  & .dropdown {
+    width: fit-content;
+    position: relative;
+    margin-top: 44px;
+    background-color: var(--elements-color);
+    border-radius: 4px;
+
+    & label {
+      width: 220px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px 24px;
+
+      & svg.openFilterIcon {
+        display: none;
+      }
+    }
+
+    & input[type="checkbox"]:checked ~ .dropdownContent {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    & input[type="checkbox"]:checked ~ label svg.closedFilterIcon {
+      display: none;
+    }
+
+    & input[type="checkbox"]:checked ~ label svg.openFilterIcon {
+      display: block;
+    }
+  }
+
+  & .dropdownContent {
+    max-width: 220px;
+    display: none;
+    position: absolute;
+    padding: 16px 24px;
+    margin-top: 4px;
+    background-color: inherit;
+    border-radius: 4px;
+
+    & label {
+      display: block;
+      max-width: 100%;
+      padding: 0;
+    }
+  }
 }
 
 .labelSeach {
