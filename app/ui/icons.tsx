@@ -16,7 +16,7 @@ export function SearchIcon() {
   )
 }
 
-export function ClosedFilterIcon({ styles }) {
+export function ClosedFilterIcon({ styles }: any) {
   return (
     <svg
       width="20"
@@ -39,7 +39,7 @@ export function ClosedFilterIcon({ styles }) {
   );
 }
 
-export function OpenFilterIcon({ styles }) {
+export function OpenFilterIcon({ styles }: any) {
   return (
     <svg
       width="20"
