@@ -3,6 +3,7 @@ import {
   ClosedFilterIcon,
   OpenFilterIcon
 } from "../icons"
+import SubmenuOption from "./submenuOption"
 import styles from "./actionsBar.module.css"
 
 export default function ActionsBar({ handlerSubmit, handleChange }: any) {
@@ -39,26 +40,36 @@ export default function ActionsBar({ handlerSubmit, handleChange }: any) {
         </label>
 
         <div className={styles.dropdownContent} aria-label="submenu">
-          <div>
-            <input type="radio" id="africa" name="region" value="Africa" aria-hidden="true" hidden onChange={handleChange} />
-            <label htmlFor="africa">Africa</label>
-          </div>
-          <div>
-            <input type="radio" id="america" name="region" value="Americas" aria-hidden="true" hidden onChange={handleChange}  />
-            <label htmlFor="america">America</label>
-          </div>
-          <div>
-            <input type="radio" id="asia" name="region" value="Asia" aria-hidden="true" hidden onChange={handleChange}  />
-            <label htmlFor="asia">Asia</label>
-          </div>
-          <div>
-            <input type="radio" id="europa" name="region" value="Europe" aria-hidden="true" hidden onChange={handleChange}  />
-            <label htmlFor="europa">Europa</label>
-          </div>
-          <div>
-            <input type="radio" id="oceania" name="region" value="Oceania" aria-hidden="true" hidden onChange={handleChange}  />
-            <label htmlFor="oceania">Oceania</label>
-          </div>
+          <SubmenuOption
+            id="africa"
+            value="Africa"
+            onChange={handleChange}
+            label="Africa"
+          />
+          <SubmenuOption
+            id="america"
+            value="Americas"
+            onChange={handleChange}
+            label="America"
+          />
+          <SubmenuOption
+            id="asia"
+            value="Asia"
+            onChange={handleChange}
+            label="Asia"
+          />
+          <SubmenuOption
+            id="europe"
+            value="Europe"
+            onChange={handleChange}
+            label="Europe"
+          />
+          <SubmenuOption
+            id="oceania"
+            value="Oceania"
+            onChange={handleChange}
+            label="Oceania"
+          />
         </div>
       </div>
     </section>
