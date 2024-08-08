@@ -75,3 +75,19 @@
   }
 }
 
+@media (width >= 1024px) {
+  .actionsBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    & .dropdown {
+      margin-top: 0;
+    }
+
+    & form {
+      flex: auto;
+      max-width: 480px;
+    }
+  }
+}
