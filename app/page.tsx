@@ -4,7 +4,7 @@ import { useState } from "react";
 import Container from "./ui/container";
 import ActionsBar from "./ui/actions-bar/actionsBar";
 import initialContries from "./lib/data.json";
-import { convertToLowerCase } from "./lib/utils"
+import { convertToLowerCase, trimQuery } from "./lib/utils"
 import Countries from "./ui/countries/countries";
 
 export default function Home() {
@@ -12,7 +12,8 @@ export default function Home() {
 
   const handlerSearch = (formData: FormData) => {
     const query = convertToLowerCase(formData.get("query"))
-    const countryFound = initialContries.filter((element) => convertToLowerCase(element.name).includes(query))
+    const trimedQuery = trimQuery(query)
+    const countryFound = initialContries.filter((element) => convertToLowerCase(element.name).includes(trimedQuery))
     setCountries(countryFound)
   }
 
