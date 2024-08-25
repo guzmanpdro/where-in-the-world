@@ -46,4 +46,4 @@ Desarrollando este proyecto puse en práctica las características de Next.js co
 
 - Sitio web - [Pedro Guzmán](https://guzmanpdro.vercel.app/)
 - Frontend Mentor - [@guzmanpdro](https://www.frontendmentor.io/profile/guzmanpdro)
-- X - [@guzmanpdro](https://www.twitter.com/yourusername)
+- X - [@guzmanpdro](https://www.twitter.com/guzmanpdro)
