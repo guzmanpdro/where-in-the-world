@@ -1,36 +1,49 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Frontend Mentor - REST Countries API with color theme switcher solution
 
-## Getting Started
+Esta es una solución para el [REST Countries API with color theme switcher challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/rest-countries-api-with-color-theme-switcher-5cacc469fec04111f7b848ca). Los retos de Frontend Mentor te ayudan a mejorar tus habilidades de programación construyendo proyectos realistas.
 
-First, run the development server:
+## Visión general
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### El reto
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Los usuarios deben poder:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Ver todos los países de la API en la página de inicio
+- Buscar un país utilizando un campo `input
+- Filtrar los países por región
+- Hacer clic en un país para ver información más detallada en una página aparte
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Captura de pantalla
 
-## Learn More
+![](./public/screenshot.png)
 
-To learn more about Next.js, take a look at the following resources:
+### Enlaces
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- URL de la solución: [Añada aquí la URL de la solución](https://your-solution-url.com)
+- URL del sitio en vivo: [https://where-in-the-world-gp.vercel.app/](https://where-in-the-world-gp.vercel.app/)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Mi proceso
 
-## Deploy on Vercel
+### Construido con
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- CSS Grid
+- Mobile-first workflow
+- [Next.js](https://nextjs.org/) - React framework
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### Lo que aprendí
+
+Desarrollando este proyecto puse en práctica las características de Next.js como la optimización de fuentes e imágenes, la creación de layouts y páginas y la navegación entre páginas.
+
+### Recursos útiles
+
+- [Documentación de Next.js](https://nextjs.org/docs) - Me sirvió de mucha ayuda para orientarme sobre las características que usé del framework.
+- [Tutorial Next.js 14](https://www.youtube.com/watch?v=jMy4pVZMyLM) - Este es un tutorial muy bueno de @midudev que me ayudó a profundizar más en Next.js a medida que iba desarrollando el proyecto.
+
+### Autor
+
+- Sitio web - [Pedro Guzmán](https://guzmanpdro.vercel.app/)
+- Frontend Mentor - [@guzmanpdro](https://www.frontendmentor.io/profile/guzmanpdro)
+- X - [@guzmanpdro](https://www.twitter.com/yourusername)
