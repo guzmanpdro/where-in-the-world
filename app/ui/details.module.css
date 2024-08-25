@@ -1,0 +1,110 @@
+.btnLink {
+  max-width: fit-content;
+  padding: 8px 24px;
+  margin-bottom: 68px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-radius: 4px;
+  background-color: var(--elements-color);
+}
+
+.wrapper {
+  padding: 40px 28px;
+  font-size: 16px;
+}
+
+.main {
+  & h1 {
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 800;
+  }
+
+  & h2 {
+    margin-bottom: 16px;
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  & strong,
+  & h2 {
+    font-weight: 600;
+  }
+
+  & img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 40px;
+  }
+}
+
+.infoSection {
+  max-width: 70ch;
+
+  & .infoContainer {
+    padding-top: 24px;
+    padding-bottom: 24px;
+
+    & .borderCountries {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      list-style-type: none;
+
+      & li {
+        flex: auto;
+        padding: 4px 10px;
+        text-align: center;
+        background-color: var(--elements-color);
+        border-radius: 2px;
+      }
+
+      & li.noBorders {
+        font-size: 60px;
+        line-height: 1;
+        background-color: transparent;
+      }
+    }
+  }
+
+  & .flexInfoContainer .infoContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+}
+
+@media (width >= 1024px) {
+  .wrapper {
+    padding-right: 48px;
+    padding-left: 48px;
+  }
+
+  .main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 64px;
+
+    & img {
+      margin: 0;
+    }
+  }
+
+  .infoSection .flexInfoContainer {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .infoSection > .infoContainer {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding-bottom: 0;
+
+    & h2 {
+      margin-bottom: 0;
+    }
+  }
+}

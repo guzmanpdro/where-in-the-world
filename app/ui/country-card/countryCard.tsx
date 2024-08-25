@@ -18,7 +18,11 @@ export default function CountryCard({
   population: number;
   region: string;}) {
   return (
-    <Link href="/details" className={styles.countryCard}>
+    <Link href={{
+      pathname: '/details',
+      query: { q: `${name}` },
+    }} 
+    className={styles.countryCard}>
       <Image
         src={flags.svg}
         alt="a" 
